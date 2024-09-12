@@ -3,11 +3,19 @@ import "./myStyles.css";
 
 function Conversation() {
   return (
-    <div className="convo-con">
-      <p className="con-icon"></p>
-      <p className="con-title"></p>
-      <p className="con-lastMessage"></p>
-      <p className="con-timeStamp"></p>
+    <div>
+      <div className="convo-con">
+        <p className="con-icon">M</p>
+        <p className="con-title">Midhun</p>
+        <p className="con-lastMessage">Hi</p>
+        <p className="con-timeStamp">today</p>
+      </div>
+      <div className="convo-con">
+        <p className="con-icon">M</p>
+        <p className="con-title">Midhun</p>
+        <p className="con-lastMessage">Hi</p>
+        <p className="con-timeStamp">today</p>
+      </div>
     </div>
   );
 }
