@@ -25,6 +25,7 @@
     border-radius: 20px;
     margin: 10px;
     padding: 10px 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .sb-search{
@@ -35,6 +36,7 @@
     margin: 10px;
     padding: 10px 10px;
     align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .search-ip{
@@ -52,6 +54,7 @@
     margin: 10px;
     padding: 10px 10px;
     flex: 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .convo-con{
@@ -110,6 +113,7 @@
     padding: 10px 10px;
     margin: 10px;
     border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .header-text{
@@ -125,6 +129,9 @@
     padding: 10px 10px;
     margin: 10px;
     border-radius: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .text-input-area{
@@ -134,4 +141,92 @@
     padding: 10px 10px;
     margin: 10px;
     border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.other-message-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.other-text-container{
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+}
+
+.self-message-container{
+    display: flex;
+    justify-content: flex-end   ;
+}
+
+.messageBox{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(80, 163, 80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-container{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0,0,0,0.54);
+    border-bottom: 5px solid #63d7b0;
+    border-radius: 20px;
+}
+
+.welcome-logo{
+    height: 20vh;
+}
+
+.creategroup-container{
+    flex: 0.7;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    border-radius: 20px;
+    padding: 20px 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.login-container{
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image-container{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    flex: 0.7;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #63d7b0;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
