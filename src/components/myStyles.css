@@ -1,3 +1,13 @@
+.dark{
+    background-color: #2d3841 !important;
+    color: whitesmoke !important;
+}
+
+.icon{
+    width: 1.25em !important;
+    height: 1.25em !important;
+}
+
 .main-container{
     width: 90vw;
     height: 90vh;
@@ -22,6 +32,7 @@
     display: flex;
     background-color: white;
     justify-content: space-between;
+    align-items: center;
     border-radius: 20px;
     margin: 10px;
     padding: 10px 10px;
@@ -48,13 +59,13 @@
 }
 
 .sb-convo{
-    display: flex;
     background-color: white;
     border-radius: 20px;
     margin: 10px;
     padding: 10px 10px;
     flex: 1;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition-duration: 0.5s;
 }
 
 .convo-con{
@@ -65,6 +76,15 @@
     margin: 5px;
     padding: 5px;
     border-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+.convo-con:hover{
+    background-color: #d9d9d9;
+}
+
+.convo-con:active{
+    background-color: white;
 }
 
 .con-icon{
@@ -229,4 +249,86 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.list-container{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+}
+
+.ug-header{
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ug-title{
+    color: rgba(0,0,0,0.54);
+    margin-left: 10px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ug-list{
+    flex: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 10px;
+    border-radius: 20px;
+    padding: 12px 5px;
+    margin: 10px;
+}
+
+.ug-list::-webkit-scrollbar{
+    display: none;
+}
+
+.list-item{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.list-item:hover{
+    background-color: rgba(226,226,226);
+}
+
+.list-item:active{
+    background-color: white;
+}
+
+@media only screen and (max-width: 40em) {
+    .sb-search{
+        display: none;
+    }
+    .sb-convo{
+        display: none;
+    }
+    .sb-header{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .chatarea-con{
+        flex: 1;
+    }
+    .sidebar-con{
+        flex: 0;
+    }
+    .main-container{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0px;
+    }
 }
