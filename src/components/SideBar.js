@@ -120,6 +120,12 @@ function Sidebar() {
             return <div key={index}></div>;
           }
           if (conversation.latestMessage === undefined) {
+            const currentUserIndex = conversation.users.findIndex(
+              (u) => u._id === user._id
+            );
+
+            const oppositeUser =
+              conversation.users[currentUserIndex === 0 ? 1 : 0];
             // console.log("No Latest Message with ", conversation.users[1]);
             return (
               <div
@@ -138,16 +144,16 @@ function Sidebar() {
                       "chat/" +
                         conversation._id +
                         "&" +
-                        conversation.users[1].name
+                        oppositeUser.name
                     );
                   }}
                   // dispatch change to refresh so as to update chatArea
                 >
                   <p className={"con-icon " + (lightTheme && "dark")}>
-                    {conversation.users[1].name[0]}
+                    {oppositeUser.name[0]}
                   </p>
                   <p className={"con-title " + (lightTheme && "dark")}>
-                    {conversation.users[1].name}
+                    {oppositeUser.name}
                   </p>
 
                   <p className={"con-lastMessage " + (lightTheme && "dark")}>
