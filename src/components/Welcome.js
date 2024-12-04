@@ -11,7 +11,7 @@ function Welcome() {
   console.log(userData);
   const nav=useNavigate();
   if(!userData){
-    console.log("usernot authenticated")
+    console.log("user not authenticated")
     nav("/")
   }
   return (

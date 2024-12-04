@@ -1,13 +1,14 @@
 import React from "react";
 
-function MessageSelf() {
-  var props1 = { message: "Hi" };
-
+function MessageSelf({ props }) {
+  // console.log("Message self Prop : ", props);
   return (
     <div className="self-message-container">
       <div className="messageBox">
-        <p>{props1.message}</p>
-        <div className="self-timestamp">12:00am</div>
+        <p style={{ color: "black" }}>{props.content}</p>
+        {/* <p className="self-timeStamp" style={{ color: "black" }}>
+          12:00am
+        </p> */}
       </div>
     </div>
   );
