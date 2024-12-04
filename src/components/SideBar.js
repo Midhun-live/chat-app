@@ -67,20 +67,20 @@ function Sidebar() {
           >
             <PersonAddIcon className={"icon " + (lightTheme && "dark")} />
           </IconButton>
-          <IconButton
+          {/* <IconButton
             onClick={() => {
               navigate("groups");
             }}
           >
             <GroupAddIcon className={"icon " + (lightTheme && "dark")} />
-          </IconButton>
-          <IconButton
+          </IconButton> */}
+          {/* <IconButton
             onClick={() => {
               navigate("creategroups");
             }}
           >
             <AddCircleIcon className={"icon " + (lightTheme && "dark")} />
-          </IconButton>
+          </IconButton> */}
 
           <IconButton
             onClick={() => {

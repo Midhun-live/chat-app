@@ -23,7 +23,6 @@ function User() {
   }
 
   useEffect(() => {
-    console.log("User Refreshed");
     const config = {
       headers: {
         Authorization: `Bearer ${userData.data.token}`,

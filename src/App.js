@@ -20,9 +20,9 @@ function App() {
         <Route path="app" element={<MainComponent/>}>
           <Route path="welcome" element={<Welcome/>}/>
           <Route path="chat/:_id" element={<ChatArea/>}/>
-          <Route path="creategroups" element={<CreateGroups/>}/>
+          {/* <Route path="creategroups" element={<CreateGroups/>}/> */}
           <Route path="users" element={<Users/>}/>
-          <Route path="groups" element={<Groups/>}/>
+          {/* <Route path="groups" element={<Groups/>}/> */}
         </Route>
       </Routes>
     </div>

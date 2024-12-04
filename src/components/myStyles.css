@@ -8,6 +8,13 @@
   height: 1.25em !important;
 }
 
+.other-icons {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+
 .main-container {
   width: 90vw;
   height: 90vh;
@@ -23,6 +30,8 @@
 }
 
 .chatarea-con {
+  display: flex;
+  flex-direction: column;
   flex: 0.7;
 }
 
