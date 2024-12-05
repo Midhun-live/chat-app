@@ -28,7 +28,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "https://chat-app-server-5s42.onrender.com//user/login",
+        "https://chat-app-server-5s42.onrender.com/user/login",
         data,
         config
       );
@@ -57,7 +57,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "https://chat-app-server-5s42.onrender.com//user/register",
+        "https://chat-app-server-5s42.onrender.com/user/register",
         data,
         config
       );

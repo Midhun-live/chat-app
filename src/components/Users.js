@@ -28,7 +28,7 @@ function User() {
         Authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("https://chat-app-server-5s42.onrender.com//user/fetchUsers", config).then((data) => {
+    axios.get("https://chat-app-server-5s42.onrender.com/user/fetchUsers", config).then((data) => {
       console.log("User data from API ", data);
       setUsers(data.data);
     });
@@ -82,7 +82,7 @@ function User() {
                     },
                   };
                   axios.post(
-                    "https://chat-app-server-5s42.onrender.com//chat/",
+                    "https://chat-app-server-5s42.onrender.com/chat/",
                     {
                       userId: user._id,
                     },
