@@ -28,7 +28,7 @@ function User() {
         Authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("https://chat-app-server-three-xi.vercel.app/user/fetchUsers", config).then((data) => {
+    axios.get("http://localhost:8080/user/fetchUsers", config).then((data) => {
       console.log("User data from API ", data);
       setUsers(data.data);
     });
@@ -82,7 +82,7 @@ function User() {
                     },
                   };
                   axios.post(
-                    "https://chat-app-server-three-xi.vercel.app/chat/",
+                    "http://localhost:8080/chat/",
                     {
                       userId: user._id,
                     },

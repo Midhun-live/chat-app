@@ -28,7 +28,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "https://chat-app-server-three-xi.vercel.app/user/login",
+        "http://localhost:8080/user/login",
         data,
         config
       );
@@ -57,7 +57,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "https://chat-app-server-three-xi.vercel.app/user/register",
+        "http://localhost:8080/user/register",
         data,
         config
       );

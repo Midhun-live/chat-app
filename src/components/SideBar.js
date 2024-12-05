@@ -41,7 +41,7 @@ function Sidebar() {
       },
     };
 
-    axios.get("https://chat-app-server-three-xi.vercel.app/chat/", config).then((response) => {
+    axios.get("http://localhost:8080/chat/", config).then((response) => {
       console.log("Data refresh in sidebar ", response.data);
       setConversations(response.data);
       // setRefresh(!refresh);

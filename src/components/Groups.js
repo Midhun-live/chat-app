@@ -36,7 +36,7 @@ function Groups() {
     };
 
     axios
-      .get("https://chat-app-server-three-xi.vercel.app/chat/fetchGroups", config)
+      .get("http://localhost:8080/chat/fetchGroups", config)
       .then((response) => {
         console.log("Group Data from API ", response.data);
         SetGroups(response.data);
@@ -97,7 +97,7 @@ function Groups() {
                   //   },
                   // };
                   // axios.post(
-                  //   "https://chat-app-server-three-xi.vercel.app/chat/",
+                  //   "http://localhost:8080/chat/",
                   //   {
                   //     userId: user._id,
                   //   },

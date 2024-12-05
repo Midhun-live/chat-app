@@ -31,7 +31,7 @@ function ChatArea() {
     };
     axios
       .post(
-        "https://chat-app-server-three-xi.vercel.app/message/",
+        "http://localhost:8080/message/",
         {
           content: messageContent,
           chatId: chat_id,
@@ -54,7 +54,7 @@ function ChatArea() {
       },
     };
     axios
-      .get("https://chat-app-server-three-xi.vercel.app/message/" + chat_id, config)
+      .get("http://localhost:8080/message/" + chat_id, config)
       .then(({ data }) => {
         setAllMessages(data);
         setloaded(true);
