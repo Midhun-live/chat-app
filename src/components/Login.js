@@ -8,7 +8,7 @@ import Toaster from "./Toaster";
 function Login() {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState({ name: "", email: "", password: "" });
-  const [showlogin, setShowLogin] = useState(false);
+  const [showlogin, setShowLogin] = useState(true);
   const [signinStatus, setSigninStatus] = React.useState();
   const [loginStatus, setLoginStatus] = React.useState();
 
@@ -28,7 +28,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "https://chat-app-server-5s42.onrender.com/user/login",
+        "http://localhost:8080/user/login",
         data,
         config
       );
@@ -57,7 +57,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "https://chat-app-server-5s42.onrender.com/user/register",
+        "http://localhost:8080/user/register",
         data,
         config
       );

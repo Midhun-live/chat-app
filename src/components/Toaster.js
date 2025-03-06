@@ -13,7 +13,7 @@ function Toaster({message}) {
   return (
     <div>
       <Snackbar
-        onchorOrigin={{
+        anchorOrigin={{
           vertical: "bottom",
           horizontal: "left",
         }}
